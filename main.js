@@ -24,3 +24,15 @@ document.querySelectorAll(".close").forEach(item => {
         document.body.style.overflow = "visible";
     });
 });
+function openModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "block";
+    const img = modal.querySelector('.modal-content');
+    const collageImg = document.querySelector(`#${modalId.replace('modal', 'item')} img`);
+    img.src = collageImg.src;
+}
+
+function closeModal(modalId) {
+    const modal = document.getElementById(modalId);
+    modal.style.display = "none";
+}
