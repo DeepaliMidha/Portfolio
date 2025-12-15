@@ -23,6 +23,7 @@ body {
 
 header {
   display: flex;
+  font-family: Calibri, "Segoe UI", Arial, sans-serif;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
